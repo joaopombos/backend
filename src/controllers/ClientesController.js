@@ -218,9 +218,8 @@ clientesController.loginadmin = async (req, res) => {
       { expiresIn: '1h' }
     );
 
-    res.cookie('token', token, { httpOnly: true, secure: true, sameSite: 'None', maxAge: 3600000  });
-
-    res.cookie('idware', wareUser.idware, { httpOnly: false, secure: true, sameSite: 'None',maxAge: 3600000 }); 
+    res.cookie('token', token, { httpOnly: true, secure: true, maxAge: 3600000 }); 
+    res.cookie('idware', wareUser.idware, { httpOnly: true, secure: true, maxAge: 3600000 }); 
 
     res.status(200).json({ token });
   } catch (error) {
