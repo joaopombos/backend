@@ -10,19 +10,19 @@ const bodyParser = require('body-parser');
 const rotas = require('src/routes/WareRoutes');
 
 // Modelos
-const Clientes = require('src/models/clientes');
-const Empresas = require('src/models/empresas');
-const TipoUser = require('src/models/tipouser');
-const Tiposoftadd = require('src/models/tiposoftadd');
-const Avaliacoes = require('src/models/avaliacoes');
-const LicencasAtribuidas = require('src/models/licencasatribuidas');
-const Orcamentos = require('src/models/orcamentos');
-const Pedidos = require('src/models/pedidos');
-const Versoes = require('src/models/versoes');
-const SoftwaresAdquiridos = require('src/models/softwaresadquiridos');
-const Tickets = require('src/models/tickets');
-const TiposSoftwares = require('src/models/tipossoftwares');
-const Ware = require('src/models/ware');
+const Clientes = require('./src/models/clientes');
+const Empresas = require('./src/models/empresas');
+const TipoUser = require('./src/models/tipouser');
+const Tiposoftadd = require('./src/models/tiposoftadd');
+const Avaliacoes = require('./src/models/avaliacoes');
+const LicencasAtribuidas = require('./src/models/licencasatribuidas');
+const Orcamentos = require('./src/models/orcamentos');
+const Pedidos = require('./src/models/pedidos');
+const Versoes = require('./src/models/versoes');
+const SoftwaresAdquiridos = require('./src/models/softwaresadquiridos');
+const Tickets = require('./src/models/tickets');
+const TiposSoftwares = require('./src/models/tipossoftwares');
+const Ware = require('./src/models/ware');
 
 // Configurações
 app.set('port', process.env.PORT || 3000);
