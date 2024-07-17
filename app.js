@@ -7,7 +7,7 @@ const app = express();
 const sequelize = require('./src/models/database');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
-const rotas = require('src/routes/WareRoutes');
+const rotas = require('./src/routes/WareRoutes');
 
 // Modelos
 const Clientes = require('./src/models/clientes');
