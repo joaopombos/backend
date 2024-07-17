@@ -1,4 +1,4 @@
-const Sequelize = require("sequelize");
+var Sequelize = require("sequelize");
 
 const sequelize = new Sequelize({
   database: "basededados_mqvg",
