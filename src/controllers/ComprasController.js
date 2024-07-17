@@ -4,7 +4,7 @@ const { fn, col } = require('sequelize');
 const LicencasAtribuidas = require('../models/licencasatribuidas');
 const SoftwaresAdquiridos = require('../models/softwaresadquiridos');
 const TipoSoftwares = require('../models/tipossoftwares');
-const Versoes = require('../models/versoes');
+const Versoes = require('../models/Versoes');
 const Empresas = require('../models/empresas');
 const { Op } = require('sequelize');
 
