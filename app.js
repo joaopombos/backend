@@ -54,7 +54,7 @@ app.use(session({
   secret: 'seuSegredoAqui',
   resave: false,
   saveUninitialized: false,
-  cookie: { secure: false } // Para testes locais sem HTTPS
+  cookie: { secure: true } // Para testes locais sem HTTPS
 }));
 
 // Sincronizar modelos e inserir dados iniciais
