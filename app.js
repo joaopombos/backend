@@ -2,12 +2,12 @@ const express = require('express');
 const cors = require('cors');
 const session = require('express-session');
 const PgSession = require('connect-pg-simple')(session);
-const pool = require('../Backend/src/models/database');
+const pool = require('src/models/database');
 const app = express();
 const sequelize = require('src/models/database');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
-const rotas = require('./src/routes/WareRoutes');
+const rotas = require('src/routes/WareRoutes');
 
 // Modelos
 const Clientes = require('src/models/clientes');
