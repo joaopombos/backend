@@ -4,25 +4,25 @@ const session = require('express-session');
 const PgSession = require('connect-pg-simple')(session);
 const pool = require('../Backend/src/models/database');
 const app = express();
-const sequelize = require('./src/models/database');
+const sequelize = require('src/models/database');
 const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const rotas = require('./src/routes/WareRoutes');
 
 // Modelos
-const Clientes = require('../Backend/src/models/clientes');
-const Empresas = require('../Backend/src/models/empresas');
-const TipoUser = require('../Backend/src/models/tipouser');
-const Tiposoftadd = require('../Backend/src/models/tiposoftadd');
-const Avaliacoes = require('../Backend/src/models/avaliacoes');
-const LicencasAtribuidas = require('../Backend/src/models/licencasatribuidas');
-const Orcamentos = require('../Backend/src/models/orcamentos');
-const Pedidos = require('../Backend/src/models/pedidos');
-const Versoes = require('../Backend/src/models/versoes');
-const SoftwaresAdquiridos = require('../Backend/src/models/softwaresadquiridos');
-const Tickets = require('../Backend/src/models/tickets');
-const TiposSoftwares = require('../Backend/src/models/tipossoftwares');
-const Ware = require('../Backend/src/models/ware');
+const Clientes = require('src/models/clientes');
+const Empresas = require('src/models/empresas');
+const TipoUser = require('src/models/tipouser');
+const Tiposoftadd = require('src/models/tiposoftadd');
+const Avaliacoes = require('src/models/avaliacoes');
+const LicencasAtribuidas = require('src/models/licencasatribuidas');
+const Orcamentos = require('src/models/orcamentos');
+const Pedidos = require('src/models/pedidos');
+const Versoes = require('src/models/versoes');
+const SoftwaresAdquiridos = require('src/models/softwaresadquiridos');
+const Tickets = require('src/models/tickets');
+const TiposSoftwares = require('src/models/tipossoftwares');
+const Ware = require('src/models/ware');
 
 // Configurações
 app.set('port', process.env.PORT || 3000);
